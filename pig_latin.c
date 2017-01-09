@@ -12,7 +12,7 @@
 **  (Ex.: "pig" would yield "igpay", "apple" would yield "appleway")
 */
 
-int		check_input(char *original);
+int	check_input(char *original);
 char	*pig_latin(char *original);
 
 int	main(int argc, char *argv[])
