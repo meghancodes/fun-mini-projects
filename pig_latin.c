@@ -8,7 +8,7 @@
 **  
 **  Rules: To convert English words to Pig Latin the initial consonant sound 
 **  is transposed to the end of the word and 'ay' is affixed to the end.
-**  For words that start with a vowel, 'way' is affixed to the end. 
+**  For words that start with a vowel, 'way' is affixed to the end.
 **  (Ex.: "pig" would yield "igpay", "apple" would yield "appleway")
 */
 
@@ -33,7 +33,7 @@ int	main(int argc, char *argv[])
 }
 
 /*
-**  Determines the length of string s
+**  Determines whether c is a letter or not
 */
 
 int	is_letter(int c)
@@ -130,7 +130,7 @@ char	*pig_latin(char *original)
 	index = 0;
 	p_index = 0;
 	if (!(p_latin = (char *)malloc(sizeof(char) * (ft_strlen(original) + 1))))
-		return (0);
+		return (NULL);
 	if (is_vowel(original[0]))
 	{
 		while (original[index] != '\0')
