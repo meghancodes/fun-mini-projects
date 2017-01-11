@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-**  Prints a diamond of size "size". The size corresponds to the number
+**  Prints a diamond of size "size" -- the size corresponds to the number
 **  of rows in the top half of the diamond
 */
 
