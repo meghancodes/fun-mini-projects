@@ -1,28 +1,18 @@
-// create a file of words
-// go through the file and count words
-// create a random number within the range of words -- if 10 words, random num is 1 through 10, use "srand"
-// go through file again looking for that random line/word --> can put a word per line http://stackoverflow.com/questions/20773818/randomly-choosing-a-word-from-a-text-file-in-c
-
-// open file
-// scan through the file and count words
-// get a random number
-// pull that random number word out
-// strcmp the random word to a hint bank (5 hints per word)
-// print first hint
-// take in user answer
-// print second hint
-// if user gets it before 5th answer give congratulatory message
-// if not give lose message
+/*
+**  A word guess game that gives the player three tries to guess
+**  a word (pulled randomly from a file) -- a hint is given before
+**  each guess
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-	char *word1 = "lobster";
-	char *word2 = "teddybear";
-	char *word3 = "smartphone";
-	char *word4 = "purse";
-	char *word5 = "lipstick";
+char *word1 = "lobster";
+char *word2 = "teddybear";
+char *word3 = "smartphone";
+char *word4 = "purse";
+char *word5 = "lipstick";
 
 int word_1(void);
 int word_2(void);
@@ -79,7 +69,8 @@ int main(void)
 
 
 
-	printf("Rules: You have three tries to guess the correct word. A hint will be given to you before each of your guesses. Good luck!\n");
+	printf("Rules: You have three tries to guess the correct word. A hint \\
+		will be given to you before each of your guesses. Good luck!\n");
 	if (strcmp(word1, selected_word) == 0)
 	{
 		word_1();
